@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <link href="reset.css" type="text/css" rel="stylesheet" />
+    <link href="google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="google-code-prettify/prettify.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  </head>
+  <style>
+    pre
+    {
+      display: block;
+      font-family: monospace;
+      white-space: pre;
+      margin: 0;
+    }
+
+    li.L0, li.L1, li.L2, li.L3,
+    li.L5, li.L6, li.L7, li.L8
+    { list-style-type: decimal !important }
+
+    #code
+    {
+      width: 50%;
+      height: 300px;
+      float: left;
+      overflow: scroll;
+    }
+
+    #vars
+    {
+      width: 50%;
+      height: 300px;
+      overflow: scroll;
+      margin-left: 50%;
+    }
+
+    #vars pre, #code pre
+    {
+      min-height: 150px;
+    }
+  </style>
+  <body>
+    <section>
+      <div id='code'><pre class='prettyprint linenums'></pre></div>
+      <div id='vars'><pre class='prettyprint'></pre></div>
+    </section>
+
+    <script>
+       var step_number = 0;
+       var steps = 
+{"data":[{"self":"main","locals":{"random":"nil","g_array":"nil","guess":"nil"},"file":"guessing_game.rb","line":4,"ivars":{}},{"self":"main","locals":{"random":"69","g_array":"nil","guess":"nil"},"file":"guessing_game.rb","line":5,"ivars":{}},{"self":"main","locals":{"random":"69","g_array":"nil","guess":"nil"},"file":"guessing_game.rb","line":6,"ivars":{}},{"self":"main","locals":{"random":"69","g_array":"[]","guess":"nil"},"file":"guessing_game.rb","line":8,"ivars":{}},{"self":"main","locals":{"random":"69","g_array":"[]","guess":"nil"},"file":"guessing_game.rb","line":17,"ivars":{}},{"self":"main","locals":{"random":"69","g_array":"[]","guess":"nil"},"file":"guessing_game.rb","line":31,"ivars":{}},{"self":"main","locals":{"message":"\"Guess a number between 1-100\"","array":"[]","gnum":"nil"},"file":"guessing_game.rb","line":9,"ivars":{}},{"self":"main","locals":{"message":"\"Guess a number between 1-100\"","array":"[]","gnum":"nil"},"file":"guessing_game.rb","line":10,"ivars":{}},{"self":"main","locals":{"g_array":"[]","left":"nil"},"file":"guessing_game.rb","line":19,"ivars":{}},{"self":"main","locals":{"g_array":"[]","left":"5"},"file":"guessing_game.rb","line":20,"ivars":{}},{"self":"main","locals":{"g_array":"[]","left":"5"},"file":"guessing_game.rb","line":22,"ivars":{}},{"self":"main","locals":{"g_array":"[]","left":"5"},"file":"guessing_game.rb","line":29,"ivars":{}},{"self":"main","locals":{"message":"\"Guess a number between 1-100\"","array":"[]","gnum":"nil"},"file":"guessing_game.rb","line":11,"ivars":{}},{"self":"main","locals":{"message":"\"Guess a number between 1-100\"","array":"[]","gnum":"1"},"file":"guessing_game.rb","line":12,"ivars":{}},{"self":"main","locals":{"message":"\"Guess a number between 1-100\"","array":"[1]","gnum":"1"},"file":"guessing_game.rb","line":14,"ivars":{}},{"self":"main","locals":{"message":"\"Guess a number between 1-100\"","array":"[1]","gnum":"1"},"file":"guessing_game.rb","line":15,"ivars":{}},{"self":"main","locals":{"random":"69","g_array":"[1]","guess":"1"},"file":"guessing_game.rb","line":33,"ivars":{}},{"self":"main","locals":{"random":"69","g_array":"[1]","guess":"1"},"file":"guessing_game.rb","line":35,"ivars":{}},{"self":"main","locals":{"random":"69","g_array":"[1]","guess":"1"},"file":"guessing_game.rb","line":39,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 1, that's too low, try again.\"","array":"[1]","gnum":"nil"},"file":"guessing_game.rb","line":9,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 1, that's too low, try again.\"","array":"[1]","gnum":"nil"},"file":"guessing_game.rb","line":10,"ivars":{}},{"self":"main","locals":{"g_array":"[1]","left":"nil"},"file":"guessing_game.rb","line":19,"ivars":{}},{"self":"main","locals":{"g_array":"[1]","left":"4"},"file":"guessing_game.rb","line":20,"ivars":{}},{"self":"main","locals":{"g_array":"[1]","left":"4"},"file":"guessing_game.rb","line":22,"ivars":{}},{"self":"main","locals":{"g_array":"[1]","left":"4"},"file":"guessing_game.rb","line":29,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 1, that's too low, try again.\"","array":"[1]","gnum":"nil"},"file":"guessing_game.rb","line":11,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 1, that's too low, try again.\"","array":"[1]","gnum":"2"},"file":"guessing_game.rb","line":12,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 1, that's too low, try again.\"","array":"[1, 2]","gnum":"2"},"file":"guessing_game.rb","line":14,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 1, that's too low, try again.\"","array":"[1, 2]","gnum":"2"},"file":"guessing_game.rb","line":15,"ivars":{}},{"self":"main","locals":{"random":"69","g_array":"[1, 2]","guess":"2"},"file":"guessing_game.rb","line":35,"ivars":{}},{"self":"main","locals":{"random":"69","g_array":"[1, 2]","guess":"2"},"file":"guessing_game.rb","line":39,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 2, that's too low, try again.\"","array":"[1, 2]","gnum":"nil"},"file":"guessing_game.rb","line":9,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 2, that's too low, try again.\"","array":"[1, 2]","gnum":"nil"},"file":"guessing_game.rb","line":10,"ivars":{}},{"self":"main","locals":{"g_array":"[1, 2]","left":"nil"},"file":"guessing_game.rb","line":19,"ivars":{}},{"self":"main","locals":{"g_array":"[1, 2]","left":"3"},"file":"guessing_game.rb","line":20,"ivars":{}},{"self":"main","locals":{"g_array":"[1, 2]","left":"3"},"file":"guessing_game.rb","line":22,"ivars":{}},{"self":"main","locals":{"g_array":"[1, 2]","left":"3"},"file":"guessing_game.rb","line":29,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 2, that's too low, try again.\"","array":"[1, 2]","gnum":"nil"},"file":"guessing_game.rb","line":11,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 2, that's too low, try again.\"","array":"[1, 2]","gnum":"3"},"file":"guessing_game.rb","line":12,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 2, that's too low, try again.\"","array":"[1, 2, 3]","gnum":"3"},"file":"guessing_game.rb","line":14,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 2, that's too low, try again.\"","array":"[1, 2, 3]","gnum":"3"},"file":"guessing_game.rb","line":15,"ivars":{}},{"self":"main","locals":{"random":"69","g_array":"[1, 2, 3]","guess":"3"},"file":"guessing_game.rb","line":35,"ivars":{}},{"self":"main","locals":{"random":"69","g_array":"[1, 2, 3]","guess":"3"},"file":"guessing_game.rb","line":39,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 3, that's too low, try again.\"","array":"[1, 2, 3]","gnum":"nil"},"file":"guessing_game.rb","line":9,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 3, that's too low, try again.\"","array":"[1, 2, 3]","gnum":"nil"},"file":"guessing_game.rb","line":10,"ivars":{}},{"self":"main","locals":{"g_array":"[1, 2, 3]","left":"nil"},"file":"guessing_game.rb","line":19,"ivars":{}},{"self":"main","locals":{"g_array":"[1, 2, 3]","left":"2"},"file":"guessing_game.rb","line":20,"ivars":{}},{"self":"main","locals":{"g_array":"[1, 2, 3]","left":"2"},"file":"guessing_game.rb","line":22,"ivars":{}},{"self":"main","locals":{"g_array":"[1, 2, 3]","left":"2"},"file":"guessing_game.rb","line":29,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 3, that's too low, try again.\"","array":"[1, 2, 3]","gnum":"nil"},"file":"guessing_game.rb","line":11,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 3, that's too low, try again.\"","array":"[1, 2, 3]","gnum":"4"},"file":"guessing_game.rb","line":12,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 3, that's too low, try again.\"","array":"[1, 2, 3, 4]","gnum":"4"},"file":"guessing_game.rb","line":14,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 3, that's too low, try again.\"","array":"[1, 2, 3, 4]","gnum":"4"},"file":"guessing_game.rb","line":15,"ivars":{}},{"self":"main","locals":{"random":"69","g_array":"[1, 2, 3, 4]","guess":"4"},"file":"guessing_game.rb","line":35,"ivars":{}},{"self":"main","locals":{"random":"69","g_array":"[1, 2, 3, 4]","guess":"4"},"file":"guessing_game.rb","line":39,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 4, that's too low, try again.\"","array":"[1, 2, 3, 4]","gnum":"nil"},"file":"guessing_game.rb","line":9,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 4, that's too low, try again.\"","array":"[1, 2, 3, 4]","gnum":"nil"},"file":"guessing_game.rb","line":10,"ivars":{}},{"self":"main","locals":{"g_array":"[1, 2, 3, 4]","left":"nil"},"file":"guessing_game.rb","line":19,"ivars":{}},{"self":"main","locals":{"g_array":"[1, 2, 3, 4]","left":"1"},"file":"guessing_game.rb","line":20,"ivars":{}},{"self":"main","locals":{"g_array":"[1, 2, 3, 4]","left":"1"},"file":"guessing_game.rb","line":25,"ivars":{}},{"self":"main","locals":{"g_array":"[1, 2, 3, 4]","left":"1"},"file":"guessing_game.rb","line":26,"ivars":{}},{"self":"main","locals":{"g_array":"[1, 2, 3, 4]","left":"1"},"file":"guessing_game.rb","line":29,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 4, that's too low, try again.\"","array":"[1, 2, 3, 4]","gnum":"nil"},"file":"guessing_game.rb","line":11,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 4, that's too low, try again.\"","array":"[1, 2, 3, 4]","gnum":"69"},"file":"guessing_game.rb","line":12,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 4, that's too low, try again.\"","array":"[1, 2, 3, 4, 69]","gnum":"69"},"file":"guessing_game.rb","line":14,"ivars":{}},{"self":"main","locals":{"message":"\"You guessed 4, that's too low, try again.\"","array":"[1, 2, 3, 4, 69]","gnum":"69"},"file":"guessing_game.rb","line":15,"ivars":{}},{"self":"main","locals":{"random":"69","g_array":"[1, 2, 3, 4, 69]","guess":"69"},"file":"guessing_game.rb","line":47,"ivars":{}},{"self":"main","locals":{"json":"nil"},"file":"/Users/gstark/Desktop/follow-code/trace.rb","line":22,"ivars":{}},{"self":"main","locals":{"json":"nil"},"file":"/Users/gstark/Desktop/follow-code/trace.rb","line":23,"ivars":{}}],"files":{"guessing_game.rb":"require_relative 'trace.rb'\n$trace.enable\n\nrandom = rand(100)\nputs random #cheater mode\ng_array = Array.new\n\ndef handle_guess(message, array)\n  puts message\n  g_remaining(array)\n  gnum = gets.chomp.to_i\n  array << gnum\n\n  return gnum\nend\n\ndef g_remaining(g_array)\n##Personal Challenge Code below##\n  left = 5 - g_array.length\n  if left > 1\n    #if g_array.length < 5\n      puts \"You have #{left} guesses remaing.\"\n    #end\n\n  elsif left == 1\n     puts \"Final guess! Choose wisely!\"\n  end\n\nend\n\nguess = handle_guess(\"Guess a number between 1-100\", g_array)\n\nwhile g_array.length < 5\n\n  if guess > random\n    guess = handle_guess(\"You guessed #{guess}, that's too high, try again.\", g_array)\n\n  elsif guess < random\n    guess = handle_guess(\"You guessed #{guess}, that's too low, try again.\", g_array)\n\n  else guess == random\n      puts \"Congratulations! You guessed my number!\"\n    exit\n  end\n\nend\nputs \"You were wrong 5 times, game over.\"\n\n\n\n#\n# g_array.each do |guess|\n#   if guess == gnum\n#     puts \"A wise man once said, The definition of insanity is doing the same thing and expecting a different result, are you feeling ok?\"\n#   end\n","/Users/gstark/Desktop/follow-code/trace.rb":"# func = proc do |name, filename, line, object_id, binding, class_name|\n#   # var_values = vars.each_with_object({}) { |var, hash| hash[var] = binding.local_variable_get(var) }\n# \n#   p [line, binding.eval(\"self\"), binding.eval(\"self.instance_variables\")]\n#   # var_values = vars.each_with_object({}) { |var, hash| hash[var] = binding.instance_variable_get(var) }\n#   # p [filename, line, var_values]\n# end\n# \n# set_trace_func(func)\n\nDATA__ = []\n$trace = TracePoint.new(:line, :return, :b_call, :b_return) do |tp|\n  locals = tp.binding.local_variables.each_with_object({})    { |var, hash| hash[var] = tp.binding.local_variable_get(var).inspect }\n  binding_self = tp.binding.eval(\"self\")\n  ivars  = binding_self.instance_variables.each_with_object({}) { |var, hash| hash[var] = binding_self.instance_variable_get(var).inspect }\n  file   = tp.path\n  line   = tp.lineno\n\n  DATA__ << {self: tp.self, locals: locals, file: file, line: line, ivars: ivars}\nend\n\nat_exit do\n  $trace.disable\n  require 'json'\n  json = {\n           data:  DATA__,\n           files: DATA__.map { |data| data[:file] }.uniq.each_with_object({}) { |file, contents| contents[file] = File.read(file) }\n         }\n\n  puts json.to_json\nend\n\n\n"}}
+       var on_step = function()
+       {
+           var step = steps["data"][step_number];
+           var file = step["file"];
+           var line = step["line"];
+           var variables = ["self = " + step["self"]];
+           variables.push($.map(step["ivars"],  function(value, ivar ) { return ivar  + " = " + value }).join("\n"));
+           variables.push($.map(step["locals"], function(value, local) { return local + " = " + value }).join("\n"));
+
+           var file_contents = steps["files"][file];
+           $("#code pre").removeClass("prettyprinted").text(file_contents);
+           $("#vars pre").removeClass("prettyprinted").text(variables.filter(function(e) { return e != ""; }).join("\n\n"));
+           prettyPrint();
+           $(".prettyprint li:nth-child(" + line + ")").css({"background-color": "red"});
+
+           step_number = step_number + 1;
+       };
+
+       $(document).ready(function()
+       {
+         on_step();
+         $(document).on("keydown", function(event)
+         {
+           if (event.which == 32)
+           {
+             on_step();
+           }
+         });
+       });
+    </script>
+  </body>
+</html>
